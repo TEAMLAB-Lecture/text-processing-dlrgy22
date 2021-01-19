@@ -34,7 +34,7 @@ def normalize(input_string):
              'extra space'
     """
     small_letter = input_string.lower()
-    remove_multiple_space = ' '.join(small_letter.split(' '))
+    normalized_string = ' '.join(small_letter.split(' '))
     return normalized_string
 
 
