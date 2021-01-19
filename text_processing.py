@@ -34,7 +34,7 @@ def normalize(input_string):
              'extra space'
     """
     small_letter = input_string.lower()
-    normalized_string = small_letter.strip()
+    remove_multiple_space = ' '.join(remove_bothend_space.split(' '))
     return normalized_string
 
 
@@ -61,3 +61,7 @@ def no_vowels(input_string):
     """
     no_vowel_string = re.sub('a|e|i|o|u', '', input_string)
     return no_vowel_string
+
+while True:
+    input_string = input()
+    print(normalize(input_string))
